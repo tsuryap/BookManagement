@@ -1,0 +1,32 @@
+.headercls {
+    background-color: #3b5998 !important;
+    color: #FFF !important;
+}
+
+.navbar-inverse .navbar-nav > li > a {
+    color: #FFF;
+    font-size: 25px !important;
+}
+
+body {
+    background-color: #dddfe2;
+}
+
+footer {
+    border-radius: 3px;
+    border: black;
+    height: 46px;
+    margin-bottom: 5px;
+}
+
+.mainView {
+    height: 500px
+}
+
+.mainContCls {
+    background-color: white;
+}
+
+.footerContent {
+    padding: 15px;
+}
