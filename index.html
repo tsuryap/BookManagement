@@ -2,20 +2,17 @@
 
 <head>
     <title>Book Management System</title>
-    <link rel="stylesheet" href="styleSheets/bootstrap.css">
-    <link rel="stylesheet" href="styleSheets/app.css">
-    <script src='bower_components/angular/angular.js'></script>
-    <script src='app.js'></script>
+    <link rel="stylesheet" href="bookmgmt.css">
+    <script src='bookmgmt.js'></script>
 </head>
 
 <body>
     <div class="container mainContCls">
-        <div ng-include="'components/common/nav.html'">
+        <div ng-include="'app/components/common/nav.html'">
         </div>
         <div ui-view class='mainView'>
-            test
         </div>
-        <div ng-include="'components/common/footer.html'">
+        <div ng-include="'app/components/common/footer.html'">
         </div>
     </div>
 </body>

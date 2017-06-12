@@ -31,3 +31,16 @@ footer {
 .footerContent {
     padding: 15px;
 }
+
+nav a {
+    color: #FFF !important;
+}
+
+.active {
+    border-bottom: 3px solid #e32b21;
+    color: #e32b21;
+}
+
+.noPadding {
+    padding: 0px;
+}
