@@ -13,9 +13,10 @@
 /* line 11, ../sass/_app.scss */
 body {
   background-color: #dddfe2;
+  font-family: cursive !important;
 }
 
-/* line 15, ../sass/_app.scss */
+/* line 16, ../sass/_app.scss */
 footer {
   border-radius: 3px;
   border: black;
@@ -23,39 +24,41 @@ footer {
   margin-bottom: 5px;
 }
 
-/* line 22, ../sass/_app.scss */
+/* line 23, ../sass/_app.scss */
 .mainView {
   height: 500px;
 }
 
-/* line 26, ../sass/_app.scss */
+/* line 27, ../sass/_app.scss */
 .mainContCls {
   background-color: white;
   padding: 0px;
 }
 
-/* line 31, ../sass/_app.scss */
+/* line 32, ../sass/_app.scss */
 .footerContent {
   padding: 15px;
 }
 
-/* line 35, ../sass/_app.scss */
+/* line 36, ../sass/_app.scss */
 nav a {
   color: #FFF !important;
+  font-weight: bold;
+  font-size: 25px;
 }
 
-/* line 39, ../sass/_app.scss */
+/* line 42, ../sass/_app.scss */
 .active {
   border-bottom: 3px solid #e32b21;
   color: #e32b21;
 }
 
-/* line 44, ../sass/_app.scss */
+/* line 47, ../sass/_app.scss */
 .noPadding {
   padding: 0px;
 }
 
-/* line 48, ../sass/_app.scss */
+/* line 51, ../sass/_app.scss */
 .height100 {
   height: 100%;
 }
