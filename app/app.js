@@ -20,7 +20,23 @@ app.config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $ur
         })
         .state('admin', {
             url: '/admin',
-            template: '<h1> admindfdfsdf </h1>'
+            templateUrl: 'app/components/admin/main.html'
+        })
+        .state('admin.addBook', {
+            url: '/addBook',
+            views: {
+                'admin': {
+                    templateUrl: 'app/components/admin/addBook.html'
+                }
+            }
+        })
+        .state('admin.addMember', {
+            url: '/addMember',
+            views: {
+                'admin': {
+                    templateUrl: 'app/components/admin/addMember.html'
+                }
+            }
         });
     $urlRouterProvider.otherwise('/dashboard');
 }]);

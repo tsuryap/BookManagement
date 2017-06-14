@@ -1,0 +1,88 @@
+/* line 1, ../sass/_app.scss */
+.headercls {
+  background-color: #3b5998 !important;
+  color: #FFF !important;
+}
+
+/* line 6, ../sass/_app.scss */
+.navbar-inverse .navbar-nav > li > a {
+  color: #FFF;
+  font-size: 25px !important;
+}
+
+/* line 11, ../sass/_app.scss */
+body {
+  background-color: #dddfe2;
+}
+
+/* line 15, ../sass/_app.scss */
+footer {
+  border-radius: 3px;
+  border: black;
+  height: 46px;
+  margin-bottom: 5px;
+}
+
+/* line 22, ../sass/_app.scss */
+.mainView {
+  height: 500px;
+}
+
+/* line 26, ../sass/_app.scss */
+.mainContCls {
+  background-color: white;
+  padding: 0px;
+}
+
+/* line 31, ../sass/_app.scss */
+.footerContent {
+  padding: 15px;
+}
+
+/* line 35, ../sass/_app.scss */
+nav a {
+  color: #FFF !important;
+}
+
+/* line 39, ../sass/_app.scss */
+.active {
+  border-bottom: 3px solid #e32b21;
+  color: #e32b21;
+}
+
+/* line 44, ../sass/_app.scss */
+.noPadding {
+  padding: 0px;
+}
+
+/* line 48, ../sass/_app.scss */
+.height100 {
+  height: 100%;
+}
+
+/* line 2, ../sass/_admin.scss */
+.admin .sideBarMgTop {
+  margin-top: -21px;
+}
+/* line 5, ../sass/_admin.scss */
+.admin .sideBarFit {
+  padding: 0px;
+}
+/* line 8, ../sass/_admin.scss */
+.admin .sideBarActive {
+  background-color: #dff0d8 !important;
+}
+/* line 11, ../sass/_admin.scss */
+.admin li:hover {
+  background-color: #f5f5f5 !important;
+}
+/* line 14, ../sass/_admin.scss */
+.admin .sideBarActive a {
+  color: #ffff !important;
+}
+/* line 17, ../sass/_admin.scss */
+.admin li a {
+  text-decoration: none;
+  font-size: 17px;
+  font-weight: bold;
+}

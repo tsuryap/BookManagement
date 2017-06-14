@@ -1,0 +1,22 @@
+.admin {
+    .sideBarMgTop {
+        margin-top: -21px;
+    }
+    .sideBarFit {
+        padding: 0px;
+    }
+    .sideBarActive {
+        background-color: #dff0d8 !important;
+    }
+    li:hover {
+        background-color: #f5f5f5 !important;
+    }
+    .sideBarActive a {
+        color: #ffff !important;
+    }
+    li a {
+        text-decoration: none;
+        font-size: 17px;
+        font-weight: bold;
+    }
+}

@@ -42,7 +42,7 @@ module.exports = function(grunt) {
             cssFiles: {
                 src: [
                     "styleSheets/bootstrap.css",
-                    "styleSheets/app/*.css"
+                    "styleSheets/style.css"
                 ],
                 dest: 'build/<%= pkg.name %>.css'
             }
@@ -65,6 +65,14 @@ module.exports = function(grunt) {
                 files: ['app/**/*.js'],
                 tasks: ['clean', 'ngtemplates', 'concat', 'copy:build']
             }
+        },
+        compass: {
+            dist: {
+                options: {
+                    sassDir: 'sass',
+                    cssDir: 'styleSheets'
+                }
+            }
         }
     });
     grunt.loadNpmTasks('grunt-contrib-clean');
@@ -72,5 +80,6 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-copy');
     grunt.loadNpmTasks('grunt-angular-templates');
     grunt.loadNpmTasks('grunt-contrib-watch');
-    grunt.registerTask('default', ['clean', 'ngtemplates', 'concat', 'copy:build']);
+    grunt.loadNpmTasks('grunt-contrib-compass');
+    grunt.registerTask('default', ['clean', 'ngtemplates', 'compass', 'concat', 'copy:build']);
 };
