@@ -63,6 +63,11 @@ nav a {
   height: 100%;
 }
 
+/* line 55, ../sass/_app.scss */
+.red {
+  color: #FF0000;
+}
+
 /* line 2, ../sass/_admin.scss */
 .admin .sideBarMgTop {
   margin-top: -21px;
@@ -88,4 +93,14 @@ nav a {
   text-decoration: none;
   font-size: 17px;
   font-weight: bold;
+}
+
+/* line 1, ../sass/_margins.scss */
+.margin-left-15 {
+  margin-left: 15px;
+}
+
+/* line 5, ../sass/_margins.scss */
+.margin-top-20 {
+  margin-top: 20px;
 }

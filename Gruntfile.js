@@ -34,7 +34,7 @@ module.exports = function(grunt) {
                     "bower_components/angular/angular.js",
                     "bower_components/angular-ui-router/release/angular-ui-router.js",
                     "app/app.js",
-                    "app/*",
+                    "app/**/*.js",
                     "temp/all-templates.js"
                 ],
                 dest: 'build/<%= pkg.name %>.js',

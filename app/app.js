@@ -26,7 +26,7 @@ app.config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $ur
             url: '/addBook',
             views: {
                 'admin': {
-                    templateUrl: 'app/components/admin/addBook.html'
+                    templateUrl: 'app/components/admin/addBook/addBook.html'
                 }
             }
         })
@@ -34,7 +34,7 @@ app.config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $ur
             url: '/addMember',
             views: {
                 'admin': {
-                    templateUrl: 'app/components/admin/addMember.html'
+                    templateUrl: 'app/components/admin/addMember/addMember.html'
                 }
             }
         });
