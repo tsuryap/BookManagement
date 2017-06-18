@@ -10,7 +10,10 @@
                         <label>Book Title
                             <mandatory></mandatory>
                         </label>
-                        <input type="text" class="form-control" ng-model='bookObj.bookTitle' name='bookTitle' />
+                        <input type="text" class="form-control" ng-model='bookObj.bookTitle' name='bookTitle' ng-maxlength=100 required />
+                        <div ng-messages="bookform.bookTitle.$error" ng-if="bookform.bookTitle.$touched">
+                            <div ng-include="'app/components/common/errorMessages.html'"></div>
+                        </div>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-4">
@@ -18,7 +21,10 @@
                         <label mandatory>Book Author
                             <mandatory></mandatory>
                         </label>
-                        <input type="text" class="form-control" ng-model='bookObj.bookAuthor' name='bookAuthor' />
+                        <input type="text" class="form-control" ng-model='bookObj.bookAuthor' name='bookAuthor' ng-maxlength=100 required />
+                        <div ng-messages="bookform.bookAuthor.$error" ng-if="bookform.bookAuthor.$touched">
+                            <div ng-include="'app/components/common/errorMessages.html'"></div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -28,7 +34,10 @@
                         <label mandatory>Book Publisheer
                             <mandatory></mandatory>
                         </label>
-                        <input type="text" class="form-control" ng-model='bookObj.bookPublisher' name='bookPublisher' />
+                        <input type="text" class="form-control" ng-model='bookObj.bookPublisher' name='bookPublisher' ng-maxlength=100 required/>
+                        <div ng-messages="bookform.bookPublisher.$error" ng-if="bookform.bookPublisher.$touched">
+                            <div ng-include="'app/components/common/errorMessages.html'"></div>
+                        </div>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-4">
@@ -36,13 +45,16 @@
                         <label mandatory>Book Category
                             <mandatory></mandatory>
                         </label>
-                        <input type="text" class="form-control" ng-model='bookObj.bookCategory' name='bookCategory'>
+                        <input type="text" class="form-control" ng-model='bookObj.bookCategory' name='bookCategory' ng-maxlength=100 required>
+                        <div ng-messages="bookform.bookCategory.$error" ng-if="bookform.bookCategory.$touched">
+                            <div ng-include="'app/components/common/errorMessages.html'"></div>
+                        </div>
                     </div>
                 </div>
             </div>
             <div class='row'>
-                <button type="button" class="btn btn-primary margin-left-15" ng-click='addBook()'>Add Book</button>
-                <button type="button" class="btn btn-default" ng-click='reset()'>Cancel</button>
+                <button type="button" class="btn btn-primary margin-left-15" ng-click='addBook(bookform)'>Add Book</button>
+                <button type="button" class="btn btn-default" ng-click='reset(bookform)'>Cancel</button>
             </div>
         </form>
     </div>
