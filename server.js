@@ -2,23 +2,23 @@ var express = require('express'),
     mySql = require('mysql'),
     mySqlConnection = require('./server-db.js'),
     app = express(),
+    bodyParser = require('body-parser'),
     connection = mySqlConnection.createConnection();
+
+
+app.use(bodyParser.json()); // to support JSON-encoded bodies
+app.use(bodyParser.urlencoded({ // to support URL-encoded bodies
+    extended: true
+}));
+
 
 app.use(express.static(__dirname + '\\build'));
 
-app.get('/addBook', function(req, res) {
-    console.log(req.query);
+app.post('/addBook', function(req, res) {
+    console.log("testddd", req.body.bookTitle);
     res.json({ "success": true });
 });
 
-connection.connect();
-
-connection.query('SELECT 1 + 1 AS solution', function(error, results, fields) {
-    if (error) throw error;
-    console.log('The solution is: ', results[0].solution);
-});
-
-connection.end();
 
 var server = app.listen(1841, function() {
 

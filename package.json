@@ -1,17 +1,20 @@
 {
-    "name": "bookmgmt",
-    "version": "1.0.0",
-    "description": "to build a project in angular",
-    "main": "server.js",
-    "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1"
-    },
-    "keywords": [
-        "\\"
-    ],
-    "author": "surya",
-    "license": "MIT",
-    "devDependencies": {
-        "nodemon": "^1.11.0"
-    }
+  "name": "bookmgmt",
+  "version": "1.0.0",
+  "description": "to build a project in angular",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "\\"
+  ],
+  "author": "surya",
+  "license": "MIT",
+  "devDependencies": {
+    "nodemon": "^1.11.0"
+  },
+  "dependencies": {
+    "body-parser": "^1.17.2"
+  }
 }
