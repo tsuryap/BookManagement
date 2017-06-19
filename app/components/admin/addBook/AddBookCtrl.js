@@ -1,25 +1,24 @@
-app.controller('AddBook', ['$scope', 'Constants', function($scope, Constants) {
+app.controller('AddBook', ['$scope', 'Constants', 'Util', 'AddBookService', function($scope, Constants, Util, AddBookService) {
     $scope.bookHeading = Constants.admin.addBook.heading;
     $scope.bookObj = {};
     $scope.addBook = function(bookform) {
         console.log($scope.bookObj);
-        debugger;
         if (!bookform.$valid) {
-            showValidationErrors(bookform, true);
+            Util.showFormValidationErrors(bookform, true);
             return false;
         }
+        var addBookPromies = AddBookService.addBook($scope.bookObj);
+        addBookPromies.then(function successCallback(response) {
+            alert('Success')
+        }, function errorCallback(response) {
+
+            alert('failure')
+        });
+
     }
     $scope.reset = function(bookform) {
-        showValidationErrors(bookform, false);
+        Util.showFormValidationErrors(bookform, false);
         $scope.bookObj = {};
     };
-
-    function showValidationErrors(bookform, touched) {
-        _.each(bookform.$error, function(value, key) {
-            _.each(bookform.$error[key], function(value) {
-                value.$touched = touched;
-            });
-        });
-    }
 
 }]);

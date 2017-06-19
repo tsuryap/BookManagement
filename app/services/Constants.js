@@ -1,5 +1,4 @@
 app.factory('Constants', function() {
-
     return {
         admin: {
             addBook: {
