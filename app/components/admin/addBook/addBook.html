@@ -53,7 +53,7 @@
                 </div>
             </div>
             <div class='row'>
-                <button type="button" class="btn btn-primary margin-left-15" ng-click='addBook(bookform)'>Add Book</button>
+                <input type="submit" value='Add Book' class="btn btn-primary margin-left-15" ng-click='addBook(bookform)' ng-disabled='!bookform.$valid' />
                 <button type="button" class="btn btn-default" ng-click='reset(bookform)'>Cancel</button>
             </div>
         </form>

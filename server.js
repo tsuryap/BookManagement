@@ -3,6 +3,7 @@ var express = require('express'),
     mySqlConnection = require('./server-db.js'),
     app = express(),
     bodyParser = require('body-parser'),
+    bookModule = require("./modules/books/BookService.js"),
     connection = mySqlConnection.createConnection();
 
 
@@ -15,8 +16,7 @@ app.use(bodyParser.urlencoded({ // to support URL-encoded bodies
 app.use(express.static(__dirname + '\\build'));
 
 app.post('/addBook', function(req, res) {
-    console.log("testddd", req.body.bookTitle);
-    res.json({ "success": true });
+    bookModule.addBook(connection, req, res);
 });
 
 
