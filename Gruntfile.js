@@ -34,6 +34,7 @@ module.exports = function(grunt) {
                     "bower_components/angular/angular.js",
                     "bower_components/angular-ui-router/release/angular-ui-router.js",
                     "bower_components/angular-messages/angular-messages.js",
+                    "bower_components/angular-ui-grid/ui-grid.js",
                     "app/app.js",
                     "app/**/*.js",
                     "temp/all-templates.js"
@@ -43,6 +44,7 @@ module.exports = function(grunt) {
             cssFiles: {
                 src: [
                     "styleSheets/bootstrap.css",
+                    "bower_components/angular-ui-grid/ui-grid.css",
                     "styleSheets/style.css"
                 ],
                 dest: 'build/<%= pkg.name %>.css'
@@ -54,6 +56,12 @@ module.exports = function(grunt) {
                     expand: true,
                     src: ["index.html", "resources/**"],
                     dest: 'build/'
+                }, {
+                    expand: true,
+                    flatten: true,
+                    src: ['bower_components/angular-ui-grid/*.{ttf,woff,eot,svg}'],
+                    dest: 'build/',
+                    filter: 'isFile'
                 }]
             }
         },

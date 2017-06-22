@@ -1,5 +1,5 @@
 angular.module('common', []);
-var app = angular.module('bookmgmt', ['ui.router', 'common', 'ngMessages']);
+var app = angular.module('bookmgmt', ['ui.router', 'common', 'ngMessages', 'ui.grid']);
 app.config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $urlRouterProvider) {
     $stateProvider
         .state('home', {
@@ -12,7 +12,7 @@ app.config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $ur
         })
         .state('books', {
             url: '/books',
-            template: '<h1> books </h1>'
+            templateUrl: 'app/components/book/bookmain.html'
         })
         .state('memebers', {
             url: '/memebers',

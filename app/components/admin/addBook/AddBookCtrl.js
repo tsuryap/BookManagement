@@ -1,6 +1,10 @@
 app.controller('AddBook', ['$scope', 'Constants', 'Util', 'AddBookService', function($scope, Constants, Util, AddBookService) {
     $scope.bookHeading = Constants.admin.addBook.heading;
     $scope.bookObj = {};
+    $scope.status = {
+        success: false,
+        failure: false
+    };
     $scope.addBook = function(bookform) {
         console.log($scope.bookObj);
         if (!bookform.$valid) {
@@ -8,11 +12,14 @@ app.controller('AddBook', ['$scope', 'Constants', 'Util', 'AddBookService', func
             return false;
         }
         var addBookPromies = AddBookService.addBook($scope.bookObj);
+        $scope.setLoading(true);
         addBookPromies.then(function successCallback(response) {
-            alert('Success')
-        }, function errorCallback(response) {
+            $scope.setLoading(false);
+            response.data.success ? ($scope.status.success = true) : ($scope.status.failure = true);
 
-            alert('failure')
+        }, function errorCallback(response) {
+            $scope.setLoading(false);
+            $scope.status.failure = true;
         });
 
     }

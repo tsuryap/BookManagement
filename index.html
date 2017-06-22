@@ -6,7 +6,9 @@
     <script src='bookmgmt.js'></script>
 </head>
 
-<body>
+<body ng-controller="MainCtrl">
+    <div class='loader' ng-if='loading'>
+    </div>
     <div class="container mainContCls">
         <div ng-include="'app/components/common/nav.html'">
         </div>
