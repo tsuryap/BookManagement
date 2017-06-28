@@ -1,5 +1,5 @@
 angular.module('common', []);
-var app = angular.module('bookmgmt', ['ui.router', 'common', 'ngMessages', 'ui.grid']);
+var app = angular.module('bookmgmt', ['ui.router', 'common', 'ngMessages', 'ui.grid', 'ui.grid.edit']);
 app.config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $urlRouterProvider) {
     $stateProvider
         .state('home', {

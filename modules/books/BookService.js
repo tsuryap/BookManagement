@@ -14,3 +14,15 @@ exports.addBook = function(connection, req, res) {
         }
     });
 };
+exports.getBooks = function(connection, req, res) {
+    console.log('in exports')
+    var sql = "select * from books";
+    connection.query(sql, function(err, rows, fields) {
+        if (err) {
+            res.json({ 'data': null });
+        } else {
+            console.log('query successed');
+            res.json({ 'data': rows });
+        }
+    });
+}

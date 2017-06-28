@@ -24,57 +24,55 @@ footer {
   margin-bottom: 5px;
 }
 
-/* line 23, ../sass/_app.scss */
-.mainView {
-  height: 500px;
-}
-
-/* line 27, ../sass/_app.scss */
+/*.mainView {
+    height: 500px
+}*/
+/* line 28, ../sass/_app.scss */
 .mainContCls {
   background-color: white;
   padding: 0px;
 }
 
-/* line 32, ../sass/_app.scss */
+/* line 33, ../sass/_app.scss */
 .footerContent {
   padding: 15px;
 }
 
-/* line 36, ../sass/_app.scss */
+/* line 37, ../sass/_app.scss */
 nav a {
   color: #FFF !important;
   font-weight: bold;
   font-size: 25px;
 }
 
-/* line 42, ../sass/_app.scss */
+/* line 43, ../sass/_app.scss */
 .active {
   border-bottom: 3px solid #e32b21;
   color: #e32b21;
 }
 
-/* line 47, ../sass/_app.scss */
+/* line 48, ../sass/_app.scss */
 .noPadding {
   padding: 0px;
 }
 
-/* line 51, ../sass/_app.scss */
+/* line 52, ../sass/_app.scss */
 .height100 {
   height: 100%;
 }
 
-/* line 55, ../sass/_app.scss */
+/* line 56, ../sass/_app.scss */
 .red {
   color: #FF0000;
 }
 
-/* line 59, ../sass/_app.scss */
+/* line 60, ../sass/_app.scss */
 .grid {
   width: 500px;
   height: 250px;
 }
 
-/* line 64, ../sass/_app.scss */
+/* line 65, ../sass/_app.scss */
 .ui-grid-header-cell .ui-grid-cell-contents {
   height: 48px;
   white-space: normal;
@@ -84,7 +82,7 @@ nav a {
   overflow: visible;
 }
 
-/* line 73, ../sass/_app.scss */
+/* line 74, ../sass/_app.scss */
 .loader {
   width: 100%;
   height: 100%;
@@ -97,6 +95,16 @@ nav a {
   z-index: 99;
   text-align: center;
   background: url("resources/img/default.gif") no-repeat fixed center;
+}
+
+/* line 88, ../sass/_app.scss */
+.ui-grid-header-cell-wrapper {
+  height: 30px !important;
+}
+
+/* line 92, ../sass/_app.scss */
+.gridStyle {
+  margin: 25px;
 }
 
 /* line 2, ../sass/_admin.scss */

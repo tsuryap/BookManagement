@@ -20,9 +20,10 @@ footer {
     margin-bottom: 5px;
 }
 
-.mainView {
+
+/*.mainView {
     height: 500px
-}
+}*/
 
 .mainContCls {
     background-color: white;
@@ -82,4 +83,12 @@ nav a {
     z-index: 99;
     text-align: center;
     background: url("resources/img/default.gif") no-repeat fixed center;
+}
+
+.ui-grid-header-cell-wrapper {
+    height: 30px !important;
+}
+
+.gridStyle {
+    margin: 25px;
 }

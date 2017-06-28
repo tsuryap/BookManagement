@@ -6,4 +6,16 @@ app.service('Util', ['$timeout', function($timeout) {
             });
         });
     };
+    this.requesPosttHeaders = {
+        method: 'POST',
+        headers: {
+            'Content-Type': "application/json"
+        },
+    };
+    this.requesGetHeaders = {
+        method: 'GET',
+        headers: {
+            'Content-Type': "application/json"
+        },
+    };
 }])

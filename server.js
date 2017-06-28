@@ -19,6 +19,9 @@ app.post('/addBook', function(req, res) {
     bookModule.addBook(connection, req, res);
 });
 
+app.get('/getBooks', function(req, res) {
+    bookModule.getBooks(connection, req, res);
+});
 
 var server = app.listen(1841, function() {
 
